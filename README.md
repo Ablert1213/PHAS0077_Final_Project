@@ -89,11 +89,10 @@ jupyter notebook
      # For sample input
      # get current repository
      current_directory = os.getcwd()
-     filenames =
-
- [os.path.join(current_directory, '*.trans.bz2')]
-     # For full dataset
-     # filenames = glob.glob('/mnt/data/exomol/exomol3_data/49Ti-16O/LYT10to10/*.bz2')
+     filenames = glob.glob(os.path.join(current_directory, '*.trans.bz2'))
+     
+     # For full dataset (using 49Ti-16O dataset as example)
+     # filenames = glob.glob('/mnt/data/exomol/exomol3_data/TiO/49Ti-16O/Toto/*.trans.bz2')
      ```
    - Click on `Kernel` -> `Restart & Run All` to run the entire notebook.
 
