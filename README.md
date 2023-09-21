@@ -4,7 +4,7 @@
 
 ## Overview
 
-The files in this repository are designed to conduct statistical analysis on the first digits of datasets to test their distribution against Benford's Law. The primary datasets for this study are the isotopologues of Titanium Monoxide (`(^49)Ti (^16)O`) and Methane (`(^12)C (^1)H_4`) from the ExoMol database, which can be accessed [here](https://www.exomol.com/data/molecules/).
+The files in this repository are designed to conduct statistical analysis on the first digits of datasets to test their distribution against Benford's Law. The primary datasets for this study are the isotopologues of Titanium Monoxide and Methane from the ExoMol database, which can be accessed [here](https://www.exomol.com/data/molecules/).
 
 For the Titanium Monoxide dataset (`49Ti_16O`), four distinct experiments were conducted:
 
@@ -30,7 +30,7 @@ For the Methane isotopologues (`YT10to10` and `YT34to10`):
 
 The primary goal of these analyses is to determine if the leading digits of the data in these datasets follow Benford's Law, a principle that describes the frequency distribution of leading digits in many real-life sets of numerical data.
 
-## Results Visualization (`Results_plot.ipynb`)
+## Results Visualization (`12C_1H4_Results_plot.ipynb`)
 
 This Jupyter Notebook is dedicated to visualizing the results obtained from the `_ChopFile.ipynb` notebooks. It reads the results from text files and plots the Chi^2 and p-values for each file or group of files. Additionally, it visualizes the Mean Absolute Deviation (MAD) values for each file or group of files, providing a clear representation of the conformity of the datasets to Benford's Law.
 
@@ -74,7 +74,7 @@ The datasets for this analysis are extremely large and are hosted on the ExoMol 
 
 ## Running the Notebooks
 
-1. **Environment Setup**: It's recommended to set up a virtual environment to avoid any dependency conflicts. Use `venv` or `conda` to create a new environment.
+1. **Environment Setup**: It's recommended to set up a virtual environment to avoid any dependency conflicts. Use `conda` to create a new environment.
 
 2. **Launching Jupyter Notebook**: Navigate to the directory containing the notebooks and launch Jupyter Notebook:
 
@@ -97,7 +97,7 @@ jupyter notebook
      ```
    - Click on `Kernel` -> `Restart & Run All` to run the entire notebook.
 
-4. **Viewing Results**: The results will be displayed within the notebook itself. For visualizations, plots will be rendered inline.
+4. **Viewing Results**: The results will be displayed within the notebook itself. For visualizations, plots will be demonstrated.
 
 ## Conclusion
 
